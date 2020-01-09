@@ -25,9 +25,7 @@ app.use(morgan('dev'))
 
 //to make two urls talk to each other through a fetch
 app.use(
-  cors({
-    origin: 'http://localhost:3000',
-  }),
+  cors()
 )
 
 // TODOconnect with the index.js file in the routes directory
